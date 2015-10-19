@@ -245,6 +245,8 @@
 
 **Request 2:** Make a function that prints all people in the list with details
 
+> The function iterateNode will print the person's details.
+
 ```xpath
 	/people/person
 ```
@@ -264,7 +266,6 @@
 		}
 	}
 ```
-> The function iterateNode will print the person's details.
 
 **Request 3:** A function that accepts id as parameter and prints the HealthProfile of the person with that id
 
@@ -345,7 +346,7 @@
 > I created 7 people using java and marshall them to XML. This function will produce a people_new.xml in home folder. Then will read the xml file and print one at a time.  
 
 ```xml
-##### Marshalling to XML
+**Marshalling to XML**
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <people>
     <person id="7374">
@@ -429,7 +430,7 @@
 ```
 
 ```
-##### Un-Marshalling from XML
+**Un-Marshalling from XML**
 Output from XML File: 
 Person with id 7374: Carmen born 27-03-1991. Has an weight of 100.55 and height of 100.55.
 Person with id 2795: Anthony born 24-10-2014. Has an weight of 145.39 and height of 145.39.
@@ -445,7 +446,7 @@ Person with id 3544: Simonetta born 06-03-2015. Has an weight of 72.61 and heigh
 > I created 7 people using java and marshall them to JSON. This function will print the content and save to people_new.json in home folder.
 
 ```json
-##### Marshalling to JSON
+**Marshalling to JSON**
 {
   "person" : [ {
     "firstname" : "Carmen",
@@ -531,7 +532,7 @@ Person with id 3544: Simonetta born 06-03-2015. Has an weight of 72.61 and heigh
 
 
 ## How to run it
- 
+
 
 
 
