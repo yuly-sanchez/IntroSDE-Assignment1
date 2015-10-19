@@ -533,6 +533,17 @@ Person with id 3544: Simonetta born 06-03-2015. Has an weight of 72.61 and heigh
 
 ## How to run it
 
-
+```
+	ant compile
+	ant execute.evaluation
+```
+>Another way to run it
+In the project is present ivy.xml file. Right click on this file and select  **Add Ivy Library**. This will add all ivy libraries to my project's classpath.
+To do so, I will proceed as follows:
+* Click on Classpath -> Enable project specific settings -> Resolve dependencies in workspace
+```
+	ant generate
+	ant execute.evaluation
+```
 
 
