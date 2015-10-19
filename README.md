@@ -542,7 +542,7 @@ In the project is present ivy.xml file. Right click on this file and select  **A
 To do so, I will proceed as follows:
 * Click on Classpath -> Enable project specific settings -> Resolve dependencies in workspace
 ```
-	ant generate
+	ant compile
 	ant execute.evaluation
 ```
 
