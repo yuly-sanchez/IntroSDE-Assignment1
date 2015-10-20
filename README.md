@@ -230,16 +230,16 @@
 ```
 
 ## Packages content into the project 
-1. package assignment.adapter contains the DateAdapter class
-2. package assignment.dao contains the PeopleStore class
-3. package assignment.model contains HealthProfile and Person classes
-4. package assignment.people contains JAXBMarshallerXML and JAXBUnMarshallerXML classess
-5. package assignment.people.generated contains the classes generated with JAXB XJC
-6. package assignment.src contains the classes: 
+* package assignment.adapter contains the DateAdapter class
+* package assignment.dao contains the PeopleStore class
+* package assignment.model contains HealthProfile and Person classes
+* package assignment.people contains JAXBMarshallerXML and JAXBUnMarshallerXML classes
+* package assignment.people.generated contains the classes generated with JAXB XJC
+* package assignment.src contains the classes: 
 	- **HealthProfileReader** which will run the requests based on Laboratory 3.
-	- **JAXBAnnotationsXml** which will marshall (to XML) and unmarshall (from XML). This class will print and create people_new xml file in the home folder which contains 7 people. Finally will read the people_new.xml file and print one at a time.
-	- **JAXBMarshallerJson** which will marshall (to JSON). This class will print and produce a people_new.json in home folder. 
-7. package assignment.utils contains RandomNumberHelper class which contain the methods to generate random interger / double numbers in the range (min,max]
+	- **JAXBAnnotationsXml** which will marshall (to XML) and unmarshall (from XML). This class will print and create *people_new* xml file in the home folder which contains 7 people. Finally will read the people_new.xml file and print one at a time.
+	- **JAXBMarshallerJson** which will marshall (to JSON). This class will print and produce a *people_new.json* in home folder. 
+* package assignment.utils contains RandomNumberHelper class which contain the methods to generate random interger / double numbers in the range (min,max]
 
 
 ## Request based on Lab 3
@@ -479,7 +479,7 @@ Person with id 6618: Andrea born 09-02-1959. Has an weight of 94.0 and height of
 Person with id 3544: Simonetta born 06-03-2015. Has an weight of 72.61 and height of 72.61.
 ```
 
-> Another way to do marshall java objects to XML. Using JAXB and generated class with JAXB XJC.This class will produce a people_new_xjc.xml in home folder. 
+> Another way to do marshall java objects to XML. Using JAXB and generated class with JAXB XJC.This class will produce a *people_new_xjc.xml* in home folder. 
 
 ```xml
 **Marshalling to XML using generated class with JAXB XJC**
