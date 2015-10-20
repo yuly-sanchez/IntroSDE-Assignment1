@@ -1,4 +1,4 @@
-# Assignment 01: ##Reading/Writing objects to and from XML and JSON
+# Assignment 01: Reading/Writing objects to and from XML and JSON
 
 
 ## People XML File
