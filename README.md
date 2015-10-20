@@ -672,11 +672,11 @@ Person with id 7: Perez, Simonetta born 23-01-1912. Has an weight of 76.04 kg. a
 ## How to run it
 
 
->If you want run all requests, you will execute the command:	
+>If you want run all requests, you execute the command:	
 > + **ant execute.evaluation** [run compile and generate target before]
 
 
->To run the single requests you will execute the commands:	
+>If you want run the single requests, you execute the commands:	
 > + **ant compile** [run init and generate target before]
 > + **ant execute.printAllPeople** [run instruction 2 based on Lab 3]
 > + **ant execute.HProfileByIDPerson** [run instruction 3 based on Lab 3]
