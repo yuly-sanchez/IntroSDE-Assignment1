@@ -479,7 +479,7 @@ Person with id 6618: Andrea born 09-02-1959. Has an weight of 94.0 and height of
 Person with id 3544: Simonetta born 06-03-2015. Has an weight of 72.61 and height of 72.61.
 ```
 
-> Another way to do marshall java objects to XML. Using JAXB and generated class with JAXB XJC.This class will produce a *people_new_xjc.xml* in home folder. 
+> Another way to do marshall java objects to XML. Using JAXB and generated class with JAXB XJC. This class will produce a *people_new_xjc.xml* in home folder. 
 
 ```xml
 **Marshalling to XML using generated class with JAXB XJC**
@@ -580,7 +580,7 @@ Person with id 7: Perez, Simonetta born 23-01-1912. Has an weight of 76.04 kg. a
 
 **Request 3:** Make your application to convert also JSON
 
-> I created 7 people using java and marshall them to JSON. This function will print the content and save to people_new.json in home folder.
+> I created 7 people using java and marshall them to JSON. This function will print the content and save to *people_new.json* in home folder.
 
 ```json
 **Marshalling to JSON using model classes**
