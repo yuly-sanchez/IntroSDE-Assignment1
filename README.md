@@ -382,9 +382,9 @@
 
 > I created 7 people using java invocating inizializedDB function. The JABXAnnotationsXML class will do marshall java objects to XML and will produce a people_new.xml in home folder. This class also will read the xml file created and print one at a time.
 
-######Marshalling to XML using model classes ***
-File people_new.xml created in the home folder..... ***
-Output: ***
+**Marshalling to XML using model classes** ___
+File people_new.xml created in the home folder..... ___
+Output:___
 
 ```xml
  
