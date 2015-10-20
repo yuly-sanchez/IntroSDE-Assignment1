@@ -673,24 +673,24 @@ Person with id 7: Perez, Simonetta born 23-01-1912. Has an weight of 76.04 kg. a
 
 
 >If you want run all requests, you will execute the command:	
-> **ant execute.evaluation** [run compile and generate target before]
+> + **ant execute.evaluation** [run compile and generate target before]
 
 
 >To run the single requests you will execute the commands:	
-> **ant compile** [run init and generate target before]
-> **ant execute.printAllPeople** [run instruction 2 based on Lab 3]
-> **ant execute.HProfileByIDPerson** [run instruction 3 based on Lab 3]
-> **ant execute.printPeopleByCondition** [run instruction 4 based on Lab 3]
-> **ant execute.MarshallerAndUnmarshallerXML**[run instruction 2 based on Lab 4]
-> **ant execute.MarshallerJSON** [run instruction 3 based on Lab 4]
+> + **ant compile** [run init and generate target before]
+> + **ant execute.printAllPeople** [run instruction 2 based on Lab 3]
+> + **ant execute.HProfileByIDPerson** [run instruction 3 based on Lab 3]
+> + **ant execute.printPeopleByCondition** [run instruction 4 based on Lab 3]
+> + **ant execute.MarshallerAndUnmarshallerXML**[run instruction 2 based on Lab 4]
+> + **ant execute.MarshallerJSON** [run instruction 3 based on Lab 4]
 
  
-```	
-	If you want marshall and unmarshall using classes generated with JAXB XJC. 
-	You wil execute the commands:
-	**ant execute.JAXBMarshaller** [run instruction 2 based on Lab 4]
-	**ant execute.JAXBUnMarshaller** [run instruction 2 based on Lab 4]
-```
+
+>If you want marshall and unmarshall using classes generated with JAXB XJC. 
+>You wil execute the commands:
+> + **ant execute.JAXBMarshaller** [run instruction 2 based on Lab 4]
+> + **ant execute.JAXBUnMarshaller** [run instruction 2 based on Lab 4]
+
 
 
 
