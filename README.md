@@ -1,7 +1,7 @@
-# Assignment 01: Reading/Writing objects to and from XML and JSON
+# Assignment 01: ##Reading/Writing objects to and from XML and JSON
 
 
-## File XML People
+## People XML File
 
 ```xml
 <people>
@@ -229,7 +229,7 @@
 </people>
 ```
 
-## Packages content into the project 
+## Packages and files content into the project 
 * package assignment.adapter contains the DateAdapter class
 * package assignment.dao contains the PeopleStore class
 * package assignment.model contains HealthProfile and Person classes
@@ -239,7 +239,11 @@
 	- **HealthProfileReader** which will run the requests based on Laboratory 3.
 	- **JAXBAnnotationsXml** which will marshall (to XML) and unmarshall (from XML). This class will print and create *people_new* xml file in the home folder which contains 7 people. Finally will read the people_new.xml file and print one at a time.
 	- **JAXBMarshallerJson** which will marshall (to JSON). This class will print and produce a *people_new.json* in home folder. 
-* package assignment.utils contains RandomNumberHelper class which contain the methods to generate random interger / double numbers in the range (min,max]
+* package assignment.utils contains RandomNumberHelper class which contain the methods to generate random interger / double numbers in the range (min,max].
+* **people.xml** file which used as database.
+* **people.xsd** file is the XML Schema for the XML file of people. 
+* **build.xml** file is the ANT build script that compiling source code, running tests, generating documentation directly from the command line. The **compile target** will generated ivy.jar will be downloaded into an *ivy* folder and libraries that are specified in *ivy.xml* will be downloaded to *lib* folder. The **generate target** will created the folder *assignment.people.generated* that contains the classes generated using *JAXB XJC*. 
+* **ivy.xml** file used to specify the dependencies as *JAXB API* and *XJC compiler*.  
 
 
 ## Request based on Lab 3
@@ -280,7 +284,7 @@
 	}
 ```
 
-**Request 3:** A function that accepts id as parameter and prints the HealthProfile of the person with that id equals to 5
+**Request 3:** A function that accepts id as parameter and prints the HealthProfile of the person with id=5
 
 ```xpath
 	/people/person[@id=5]/healthprofile
@@ -293,7 +297,7 @@
 	bmi: 32.20
 ```
 
-**Request 4:** A function which accepts a weight equals to 90 and an operator > as parameters and prints people that fulfill that condition
+**Request 4:** A function which accepts a weight=90 and an operator > as parameters and prints people that fulfill that condition
 
 ```xpath
 	/people/person[healthprofile/weight>90]
@@ -671,13 +675,12 @@ Person with id 7: Perez, Simonetta born 23-01-1912. Has an weight of 76.04 kg. a
 
 ## How to run it
 
+>Take a look to the **build.xml** of the project and from the command line run all request:
+> + **ant execute.evaluation** [you have just executed the targets "compile" and "generate"]
 
->If you want run all requests, you execute the command:	
-> + **ant execute.evaluation** [run compile and generate target before]
 
-
->If you want run the single requests, you execute the commands:	
-> + **ant compile** [run init and generate target before]
+>Take a look to the **build.xml** of the project and you can also execute each requests. Try:	
+> + **ant compile** [you have just executed the targets "compile" and "generate"]
 > + **ant execute.printAllPeople** [run instruction 2 based on Lab 3]
 > + **ant execute.HProfileByIDPerson** [run instruction 3 based on Lab 3]
 > + **ant execute.printPeopleByCondition** [run instruction 4 based on Lab 3]
