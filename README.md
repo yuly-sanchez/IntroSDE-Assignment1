@@ -382,8 +382,10 @@
 
 > I created 7 people using java invocating inizializedDB function. The JABXAnnotationsXML class will do marshall java objects to XML and will produce a people_new.xml in home folder. This class also will read the xml file created and print one at a time.
 
-->**Marshalling to XML using model classes**<-
+->Marshalling to XML using model classes<-
 ```xml
+->Marshalling to XML using model classes<-
+
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <people>
     <person id="7374">
@@ -467,7 +469,7 @@
 ```
 
 ```
-->**Un-Marshalling from XML using model classes**<-
+**Un-Marshalling from XML using model classes**
 Output from XML File: 
 Person with id 7374: Carmen born 27-03-1991. Has an weight of 100.55 and height of 100.55.
 Person with id 2795: Anthony born 24-10-2014. Has an weight of 145.39 and height of 145.39.
@@ -480,8 +482,9 @@ Person with id 3544: Simonetta born 06-03-2015. Has an weight of 72.61 and heigh
 
 > Another way to do marshall java objects to XML. Using JAXB and generated class with JAXB XJC.This class will produce a people_new_xjc.xml in home folder. 
 
->->**Marshalling to XML using generated class with JAXB XJC**<-
->```xml
+```xml
+**Marshalling to XML using generated class with JAXB XJC**
+
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <people>
     <person id="1">
@@ -562,24 +565,27 @@ Person with id 3544: Simonetta born 06-03-2015. Has an weight of 72.61 and heigh
         </healthprofile>
     </person>
 </people>
->```
->->**Un-Marshalling to XML using generated class with JAXB XJC**<-
->Output from XML File: 
->Person with id 1: Quispe, Carmen born 04-01-1929. Has an weight of 143.34 kg. and a height of 1.55
->Person with id 2: Garcia, Anthony born 07-01-1935. Has an weight of 57.52 kg. and a height of 1.75
->Person with id 3: Pugliese, Guido born 28-01-1945. Has an weight of 32.42 kg. and a height of 2.74
->Person with id 4: Officioso, Stefania born 05-01-1926. Has an weight of 41.75 kg. and a height of 2.9
->Person with id 5: Gonzalez, Joel born 09-01-2011. Has an weight of 95.19 kg. and a height of 2.36
->Person with id 6: Bonte, Andrea born 10-01-1974. Has an weight of 147.87 kg. and a height of 2.17
->Person with id 7: Perez, Simonetta born 23-01-1912. Has an weight of 76.04 kg. and a height of 1.82
+```
+
+```
+**Un-Marshalling to XML using generated class with JAXB XJC**
+Output from XML File: 
+Person with id 1: Quispe, Carmen born 04-01-1929. Has an weight of 143.34 kg. and a height of 1.55
+Person with id 2: Garcia, Anthony born 07-01-1935. Has an weight of 57.52 kg. and a height of 1.75
+Person with id 3: Pugliese, Guido born 28-01-1945. Has an weight of 32.42 kg. and a height of 2.74
+Person with id 4: Officioso, Stefania born 05-01-1926. Has an weight of 41.75 kg. and a height of 2.9
+Person with id 5: Gonzalez, Joel born 09-01-2011. Has an weight of 95.19 kg. and a height of 2.36
+Person with id 6: Bonte, Andrea born 10-01-1974. Has an weight of 147.87 kg. and a height of 2.17
+Person with id 7: Perez, Simonetta born 23-01-1912. Has an weight of 76.04 kg. and a height of 1.82
 
 
 **Request 3:** Make your application to convert also JSON
 
 > I created 7 people using java and marshall them to JSON. This function will print the content and save to people_new.json in home folder.
 
-**Marshalling to JSON using model classes**
 ```json
+**Marshalling to JSON using model classes**
+
 {
   "person" : [ {
     "firstname" : "Carmen",
