@@ -244,15 +244,11 @@
 
 ## Request based on Lab 3
 
-**Request 1:** Use xpath to implement methods like getWeight and getHeight
-
-```xpath
-	/people/person[firstname="Paul" and lastname="Boga"]/healthprofile/weight
-	/people/person[firstname="Paul" and lastname="Boga"]/healthprofile/height
+**Request 1:** Use xpath to implement methods like getWeight and getHeight.
+> I will use this functions when will print details of all people or return person's healthprofile of given person. 
 ```
-```
-	Paul Boga's weight is 70
-	Paul Boga's height is 1.70
+	* getWeight function returns weight of a given person.
+	* getHeight function returns height of a given person.
 ```
 
 **Request 2:** Make a function that prints all people in the list with details
@@ -263,17 +259,22 @@
 	/people/person
 ```
 ```java
-	public void iterateNode(Node node) {
+	public void iterateNode(Node node, Long personID) throws XPathExpressionException {
 		NodeList nodeList = node.getChildNodes();
-		
 		for (int k = 0; k < nodeList.getLength(); k++) {
 			Node currentNode = nodeList.item(k);
 			if (currentNode.getNodeType() == Node.ELEMENT_NODE) {
 				if (currentNode.getNodeName().equals("healthprofile")) {
-				}else {
-					System.out.println(currentNode.getNodeName() + "= " + currentNode.getFirstChild().getNodeValue());
+					//System.out.println(currentNode.getNodeName() + ": " );
+				} else if (currentNode.getNodeName().equals("weight")) {
+					System.out.println(currentNode.getNodeName() + ": " + getWeight(personID));
+				} else if (currentNode.getNodeName().equals("height")) {
+					System.out.println(currentNode.getNodeName() + ": " + getHeight(personID));
+				} else {
+					System.out.println(currentNode.getNodeName() + ": "
+							+ currentNode.getFirstChild().getNodeValue());
 				}
-				iterateNode(currentNode);
+				iterateNode(currentNode,personID);
 			}
 		}
 	}
