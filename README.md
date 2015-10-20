@@ -279,7 +279,7 @@
 	}
 ```
 
-**Request 3:** A function that accepts id as parameter and prints the HealthProfile of the person with that id
+**Request 3:** A function that accepts id as parameter and prints the HealthProfile of the person with that id equals to 5
 
 ```xpath
 	/people/person[@id=5]/healthprofile
@@ -383,10 +383,9 @@
 > I created 7 people using java invocating inizializedDB function. The JABXAnnotationsXML class will do marshall java objects to XML and will produce a people_new.xml in home folder. This class also will read the xml file created and print one at a time.
 
 **Marshalling to XML using model classes**
-```xml
 File people_new.xml created in the home folder.....
-
-Output: 
+Output:
+```xml 
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <people>
     <person id="7374">
