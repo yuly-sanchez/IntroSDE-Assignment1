@@ -229,6 +229,18 @@
 </people>
 ```
 
+## Packages in this project 
+- package assignment.adapter contains the DateAdapter class
+- package assignment.dao contains the PeopleStore class
+- package assignment.model contains HealthProfile and Person classes
+- package assignment.people contains JAXBMarshallerXML and JAXBUnMarshallerXML classess
+- package assignment.people.generated contains the classes generated with JAXB XJC
+- package assignment.src contains the classes: 
+	- HealthProfileReader which will run the request based on Laboratory 3.
+	- JAXBAnnotationsXml which will do marshall (to XML) and unmarshall (from XML). This class will print and create people_new xml file in the home folder which contains 7 people. Finally will read the people_new.xml file and print one at a time.
+	- JAXBMarshallerJson which will do marshall (to JSON). This class will print and produce a people_new.json in home folder. 
+- package assignment.utils contains RandomNumberHelper class which contain the methods to generate random interger / double numbers in the range (min,max]
+
 
 ## Request based on Lab 3
 
