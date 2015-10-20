@@ -245,7 +245,7 @@
 
 **Request 2:** Make a function that prints all people in the list with details
 
-> The function iterateNode will print the person's details.
+> The iterateNode function will print the person's details.
 
 ```xpath
 	/people/person
@@ -286,7 +286,32 @@
 	/people/person[healthprofile/weight>90]
 ```
 ```
-	[George R. R., John, Karina]
+	Person id n°: 1
+	firstname: George R. R.
+	lastname: Martin
+	birthdate: 1984-09-20T18:00:00.000+02:00
+	lastupdate: 2014-09-20T18:00:00.000+02:00
+	weight: 100
+	height: 1.70
+	bmi: 31.14
+
+	Person id n°: 4
+	firstname: John
+	lastname: Doe
+	birthdate: 1984-09-20T18:00:00.000+02:00
+	lastupdate: 2014-09-20T18:00:00.000+02:00
+	weight: 92
+	height: 1.72
+	bmi: 22.985397512168742
+
+	Person id n°: 20
+	firstname: Karina
+	lastname: Camacho
+	birthdate: 1984-03-21T18:00:00.000+02:00
+	lastupdate: 2014-04-10T18:00:00.000+02:00
+	weight: 103
+	height: 1.73
+	bmi: 32.985397512168742
 ```
 
 
@@ -343,10 +368,13 @@
 
 **Request 2:** Write a java application that does the marshalling and un-marshalling using classes generated with JAXB XJC
 
-> I created 7 people using java and marshall them to XML. This function will produce a people_new.xml in home folder. Then will read the xml file and print one at a time.  
+> I created 7 people using java invocating inizializedDB function. The JABXAnnotationsXML class will do marshall java objects to XML and will produce a people_new.xml in home folder. This class also will read the xml file created and print one at a time.
 
 ```xml
-**Marshalling to XML**
+**Marshalling to XML using model classes**
+File people_new.xml created in the home folder.....
+
+Output: 
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <people>
     <person id="7374">
@@ -430,7 +458,7 @@
 ```
 
 ```
-**Un-Marshalling from XML**
+**Un-Marshalling from XML using model classes**
 Output from XML File: 
 Person with id 7374: Carmen born 27-03-1991. Has an weight of 100.55 and height of 100.55.
 Person with id 2795: Anthony born 24-10-2014. Has an weight of 145.39 and height of 145.39.
@@ -441,12 +469,113 @@ Person with id 6618: Andrea born 09-02-1959. Has an weight of 94.0 and height of
 Person with id 3544: Simonetta born 06-03-2015. Has an weight of 72.61 and height of 72.61.
 ```
 
+> Another way to do marshall java objects to XML. Using JAXB and generated class with JAXB XJC.This class will produce a people_new_xjc.xml in home folder. 
+
+```xml
+**Marshalling to XML using generated class with JAXB XJC**
+File people_new_xjc.xml created in the home folder.....
+
+Output: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<people>
+    <person id="1">
+        <firstname>Carmen</firstname>
+        <lastname>Quispe</lastname>
+        <birthdate>1929-01-04T18:12:46.076+01:00</birthdate>
+        <healthprofile>
+            <lastupdate>1925-01-03T17:54:25.113+01:00</lastupdate>
+            <weight>143.34</weight>
+            <height>1.55</height>
+            <bmi>59.66</bmi>
+        </healthprofile>
+    </person>
+    <person id="2">
+        <firstname>Anthony</firstname>
+        <lastname>Garcia</lastname>
+        <birthdate>1935-01-07T00:11:06.133+01:00</birthdate>
+        <healthprofile>
+            <lastupdate>1935-01-26T22:18:54.134+01:00</lastupdate>
+            <weight>57.52</weight>
+            <height>1.75</height>
+            <bmi>18.78</bmi>
+        </healthprofile>
+    </person>
+    <person id="3">
+        <firstname>Guido</firstname>
+        <lastname>Pugliese</lastname>
+        <birthdate>1945-01-28T05:31:55.135+01:00</birthdate>
+        <healthprofile>
+            <lastupdate>2009-01-14T05:46:50.135+01:00</lastupdate>
+            <weight>32.42</weight>
+            <height>2.74</height>
+            <bmi>4.32</bmi>
+        </healthprofile>
+    </person>
+    <person id="4">
+        <firstname>Stefania</firstname>
+        <lastname>Officioso</lastname>
+        <birthdate>1926-01-05T20:47:03.136+01:00</birthdate>
+        <healthprofile>
+            <lastupdate>1992-01-24T07:41:31.137+01:00</lastupdate>
+            <weight>41.75</weight>
+            <height>2.9</height>
+            <bmi>4.96</bmi>
+        </healthprofile>
+    </person>
+    <person id="5">
+        <firstname>Joel</firstname>
+        <lastname>Gonzalez</lastname>
+        <birthdate>2011-01-09T05:44:33.138+01:00</birthdate>
+        <healthprofile>
+            <lastupdate>1905-01-28T15:26:12.138+01:00</lastupdate>
+            <weight>95.19</weight>
+            <height>2.36</height>
+            <bmi>17.09</bmi>
+        </healthprofile>
+    </person>
+    <person id="6">
+        <firstname>Andrea</firstname>
+        <lastname>Bonte</lastname>
+        <birthdate>1974-01-10T21:21:44.139+01:00</birthdate>
+        <healthprofile>
+            <lastupdate>1987-01-16T22:31:30.140+01:00</lastupdate>
+            <weight>147.87</weight>
+            <height>2.17</height>
+            <bmi>31.4</bmi>
+        </healthprofile>
+    </person>
+    <person id="7">
+        <firstname>Simonetta</firstname>
+        <lastname>Perez</lastname>
+        <birthdate>1912-01-23T11:53:25.140+01:00</birthdate>
+        <healthprofile>
+            <lastupdate>1925-01-08T15:57:02.141+01:00</lastupdate>
+            <weight>76.04</weight>
+            <height>1.82</height>
+            <bmi>22.96</bmi>
+        </healthprofile>
+    </person>
+</people>
+```
+
+```
+**Un-Marshalling to XML using generated class with JAXB XJC**
+Output from XML File: 
+Person with id 1: Quispe, Carmen born 04-01-1929. Has an weight of 143.34 kg. and a height of 1.55
+Person with id 2: Garcia, Anthony born 07-01-1935. Has an weight of 57.52 kg. and a height of 1.75
+Person with id 3: Pugliese, Guido born 28-01-1945. Has an weight of 32.42 kg. and a height of 2.74
+Person with id 4: Officioso, Stefania born 05-01-1926. Has an weight of 41.75 kg. and a height of 2.9
+Person with id 5: Gonzalez, Joel born 09-01-2011. Has an weight of 95.19 kg. and a height of 2.36
+Person with id 6: Bonte, Andrea born 10-01-1974. Has an weight of 147.87 kg. and a height of 2.17
+Person with id 7: Perez, Simonetta born 23-01-1912. Has an weight of 76.04 kg. and a height of 1.82
+```
+
 **Request 3:** Make your application to convert also JSON
 
 > I created 7 people using java and marshall them to JSON. This function will print the content and save to people_new.json in home folder.
 
 ```json
-**Marshalling to JSON**
+**Marshalling to JSON using model classes**
 {
   "person" : [ {
     "firstname" : "Carmen",
@@ -533,17 +662,15 @@ Person with id 3544: Simonetta born 06-03-2015. Has an weight of 72.61 and heigh
 
 ## How to run it
 
-```
+```	
 	ant compile
 	ant execute.evaluation
 ```
->Another way to run it
-In the project is present ivy.xml file. Right click on this file and select  **Add Ivy Library**. This will add all ivy libraries to my project's classpath.
-To do so, I will proceed as follows:
-* Click on Classpath -> Enable project specific settings -> Resolve dependencies in workspace
-```
-	ant compile
-	ant execute.evaluation
+> If you want marshall and unmarshall using classes generated with JAXB XJC. You execute the command follow:
+ 
+```	
+	ant execute.JAXBMarshaller
+	ant execute.JAXBUnMarshaller
 ```
 
 
