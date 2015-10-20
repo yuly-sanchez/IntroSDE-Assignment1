@@ -382,9 +382,8 @@
 
 > I created 7 people using java invocating inizializedDB function. The JABXAnnotationsXML class will do marshall java objects to XML and will produce a people_new.xml in home folder. This class also will read the xml file created and print one at a time.
 
-->Marshalling to XML using model classes<-
 ```xml
-->Marshalling to XML using model classes<-
+**Marshalling to XML using model classes**
 
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <people>
@@ -577,7 +576,7 @@ Person with id 4: Officioso, Stefania born 05-01-1926. Has an weight of 41.75 kg
 Person with id 5: Gonzalez, Joel born 09-01-2011. Has an weight of 95.19 kg. and a height of 2.36
 Person with id 6: Bonte, Andrea born 10-01-1974. Has an weight of 147.87 kg. and a height of 2.17
 Person with id 7: Perez, Simonetta born 23-01-1912. Has an weight of 76.04 kg. and a height of 1.82
-
+```
 
 **Request 3:** Make your application to convert also JSON
 
