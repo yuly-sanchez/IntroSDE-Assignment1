@@ -298,7 +298,7 @@
 	/people/person[healthprofile/weight>90]
 ```
 ```
-	Person id n°: 1
+	Person id n°: 0001
 	firstname: George R. R.
 	lastname: Martin
 	birthdate: 1984-09-20T18:00:00.000+02:00
@@ -307,7 +307,7 @@
 	height: 1.70
 	bmi: 31.14
 
-	Person id n°: 4
+	Person id n°: 0004
 	firstname: John
 	lastname: Doe
 	birthdate: 1984-09-20T18:00:00.000+02:00
@@ -316,7 +316,7 @@
 	height: 1.72
 	bmi: 22.985397512168742
 
-	Person id n°: 20
+	Person id n°: 0020
 	firstname: Karina
 	lastname: Camacho
 	birthdate: 1984-03-21T18:00:00.000+02:00
@@ -382,8 +382,8 @@
 
 > I created 7 people using java invocating inizializedDB function. The JABXAnnotationsXML class will do marshall java objects to XML and will produce a people_new.xml in home folder. This class also will read the xml file created and print one at a time.
 
-```xml
 **Marshalling to XML using model classes**
+```xml
 File people_new.xml created in the home folder.....
 
 Output: 
