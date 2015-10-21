@@ -1,9 +1,9 @@
 <!-- 
-	=========================================================
-    Introduction to Service Design and Engineering
-    Description: ANT build script for this assignment #1 
-    Author: yuly.sanchez
-	========================================================== 
+	=============================================================
+    	Introduction to Service Design and Engineering Laboratory
+    	Description: ANT build script for this assignment #1 
+    	Author: yuly.sanchez
+	============================================================= 
 -->
 
 <project name="Assignment1" default="compile" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
@@ -35,8 +35,7 @@
 	<property name="build.dir" value="build" />
 	<property name="src.dir" value="src" />
 	<property name="lib.dir" value="lib" />
-	<property name="xjc.package" value="assignment.people.generated" />
-
+	<property name="xjc.package" value="people.generated" />
 
 	<!-- target: resolve downloads the dependencies to your lib folder -->
 	<target name="resolve" depends="install-ivy" description="--> retrieve dependencies with ivy">
@@ -68,7 +67,7 @@
 
 	<target name="generate">
 		<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="lib.path.id" />
-		<xjc schema="people.xsd" destdir="${src.dir}" package="${xjc.package}" />
+		<xjc schema="people.xsd" destdir="${src.dir}" package="assignment.${xjc.package}" />
 	</target>
 
 	<target name="compile" depends="init, generate">
@@ -86,10 +85,8 @@
 		<echo message="Clean target has been called" />
 		<delete dir="${build.dir}" />
 		<echo message="${build.dir} has been deleted" />
-		<delete dir="${src.dir}/${xjc.package}" />
-		<echo message="${src.dir}/${xjc.package} has been deleted" />
-		<delete file="people.xml" />
-		<echo message="people.xml has been deleted" />
+		<delete dir="${src.dir}/assignment/people/generated" />
+		<echo message="${src.dir}/assignment/people/generated has been deleted" />
 	</target>
 
 
@@ -113,7 +110,7 @@
 		<echo message="Executing Health Profile Reader: will run instructions 3 based on Lab 3" />
 		<java classname="assignment.src.HealthProfileReader" classpath="${build.dir}">
 			<arg value="getHProfileByIDPerson" />
-			<arg value="0005" />
+			<arg value="5" />
 		</java>
 	</target>
 
