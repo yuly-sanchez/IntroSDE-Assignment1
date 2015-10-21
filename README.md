@@ -229,7 +229,7 @@
 </people>
 ```
 
-## Packages and files content into the project 
+## The application consists of 7 packages and 4 files
 * package assignment.adapter contains the DateAdapter class
 * package assignment.dao contains the PeopleStore class
 * package assignment.model contains HealthProfile and Person classes
