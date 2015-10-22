@@ -680,7 +680,7 @@ Person with id 7: Perez, Simonetta born 23-01-1912. Has an weight of 76.04 kg. a
 
 
 >Take a look to the **build.xml** of the project and you can also execute each requests. Try:	
-> + **ant compile** [you have just executed the targets "compile" and "generate"]
+> + **ant compile** [you have just executed the targets "init" and "generate"]
 > + **ant execute.printAllPeople** [run instruction 2 based on Lab 3]
 > + **ant execute.HProfileByIDPerson** [run instruction 3 based on Lab 3]
 > + **ant execute.printPeopleByCondition** [run instruction 4 based on Lab 3]
